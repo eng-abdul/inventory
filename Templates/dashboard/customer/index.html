@@ -9,11 +9,11 @@
                     <button class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#exampleModal">Add Customer</button>
                     {% include "dashboard/customer/create.html" %}
                 </div>
-                <div class="col-md-4 mt-2">
+                <div class="col-md-4">
                     <input type="text" class="form-control" placeholder="search">
                 </div>
             </div>
-            <table class="table table-responsive table-sm">
+            <table class="table table-responsive">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -24,11 +24,12 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for customer in customer %}
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{customer.name}}</td>
+                        <td>{{customer.address}}</td>
+                        <td>{{customer.phone}}</td>
                         <td>
                             <a href="" data-bs-toggle="modal" data-bs-target="#editModal">
                                 <i class="ti ti-pencil"></i>
@@ -39,6 +40,7 @@
                             </a>
                         </td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
