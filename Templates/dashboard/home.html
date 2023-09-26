@@ -1,0 +1,123 @@
+
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+<div class="mt-2">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body bg-secondary text-white">
+                    <div class="row">
+                        <div class="col">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                            class="bi bi-journal w-30 h-30" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                              </svg> -->
+                              <img src="{% static "media/logo/articles-journal.svg" %}" alt="">
+                        </div>
+                        <div class="col">
+                           <p class="card-text text-end"> total</p>
+                        </div>
+                    </div>
+                    <p  class="card-text text-end">Cateogories</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body bg-primary text-white">
+                    <div class="row">
+                        <div class="col">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                            class="bi bi-journal w-30 h-30" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                              </svg> -->
+                              <img src="{% static "media/logo/articles-journal.svg" %}" class="img-fluid " alt="">
+                        </div>
+                        <div class="col">
+                           <p class="card-text text-end"> total</p>
+                        </div>
+                    </div>
+                    <p  class="card-text text-end">Orders</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body bg-warning text-white">
+                    <div class="row">
+                        <div class="col">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                            class="bi bi-journal w-30 h-30" viewBox="0 0 16 16">
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                              </svg> -->
+                              <img src="{% static "media/logo/articles-journal.svg" %}" class="img-fluid " alt="">
+                        </div>
+                        <div class="col">
+                           <p class="card-text text-end"> total</p>
+                        </div>
+                    </div>
+                    <p  class="card-text text-end">Orders</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-2">
+        <div class="row">
+            <div class="col-lg-8 d-flex align-items-strech">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                      <div class="mb-3 mb-sm-0">
+                        <h5 class="card-title fw-semibold">Sales Overview</h5>
+                      </div>
+                      <div>
+                        <select class="form-select">
+                          <option value="1">March 2023</option>
+                          <option value="2">April 2023</option>
+                          <option value="3">May 2023</option>
+                          <option value="4">June 2023</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div id="chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card w-100">
+                    <div class="card-body p-4">
+                      <div class="mb-4">
+                        <h5 class="card-title fw-semibold">Recent Transactions</h5>
+                      </div>
+                      <ul class="timeline-widget mb-0 position-relative mb-n5">
+                        <li class="timeline-item d-flex position-relative overflow-hidden">
+                          <div class="timeline-time text-dark flex-shrink-0 text-end">09:30</div>
+                          <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                            <span class="timeline-badge border-2 border border-primary flex-shrink-0 my-8"></span>
+                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                          </div>
+                          <div class="timeline-desc fs-3 text-dark mt-n1">Payment received from John Doe of $385.90</div>
+                        </li>
+                        <li class="timeline-item d-flex position-relative overflow-hidden">
+                          <div class="timeline-time text-dark flex-shrink-0 text-end">10:00 am</div>
+                          <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                            <span class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
+                            <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                          </div>
+                          <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">New sale recorded <a
+                              href="javascript:void(0)" class="text-primary d-block fw-normal">#ML-3467</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
