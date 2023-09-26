@@ -49,22 +49,20 @@ def customer(request):
         phone = request.POST['phone']
         address = request.POST['address']
         
-        customer = {
-            name,
-            phone,
-            address,
-        }
+        customer = Customer(name=name,phone=phone,address=address)
+        customer.save()
         print(customer)
     elif request.method == 'PUT':
         pass
     else:
-    #  customer = Customer.objects()
+     customer = Customer.objects.all()
+     print(customer)
      form = CustomerForm()
      context = {
-        #  customer:'customer',
-         form:'form'
+        'customer':customer,
+         'form':form
      }
-     return render(request, 'dashboard/customer/index.html')
+     return render(request, 'dashboard/customer/index.html',context)
  
 def prduct_order(request):
     if request.method == 'POST':
