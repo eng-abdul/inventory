@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ['127.0.0.1','djinventory-c7f30d0a1d0e.herokuapp.com/','localhos
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
